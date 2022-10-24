@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 62.5%;
+}
+
+.home{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/img/wallpaperflare.com_wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header__navbar{
+    /* background-color: red; */
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+}
+
+.header__navbar_logo{
+    width: 40vw;
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    justify-content: center;
+    align-content: center;
+}
+
+.header__navbar_logo a {
+    height: 50px;
+    width: 50px;
+    place-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.header__navbar_logo a h2{
+    margin: 10px auto;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.header__navbar_right{
+    width: 60vw;
+    margin: 25px 50px;
+    font-size: 2.8rem;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    place-items: center;
+}
+
+.header__navbar_right a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 3px 1px black;
+}
+
+.header__navbar_right a:hover{
+    color: #fddf7d;
+    border-bottom: 5px solid black;
+}
+
+.home__fondo{
+    height: 75vh;
+    width: 100vw;
+    padding: 25px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(3, 180px);
+    justify-content: center;
+}
+
+.home__fondo__texto{
+    color: white;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+
+.home__fondo__texto h1{
+    margin: 30px 20px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-size: 3.5rem;
+    justify-items: center;
+    align-items: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+.home__fondo__texto p{
+    margin: 30px 20px ;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    font-size: 2.0rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+.home__fondo__image{
+    background-image: url('../assets/icons/icon_home.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    grid-column: 2 / 4;
+    grid-row: 1 / 4;
+    align-content: center;
+}
+
