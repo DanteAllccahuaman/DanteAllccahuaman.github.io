@@ -557,3 +557,209 @@ html{
         font-size: 1.3rem;
     }
 }
+
+@media screen and (max-width:420px){
+
+    .home{
+        width: 420px;
+        background-size:cover;
+        background-position: -380px;
+    }
+
+    .header__navbar{
+        width: 50px;
+        height: 100%;
+        margin-left: 25px;
+    }
+
+    .header__navbar_logo{
+        display: flex;
+        width: 150px;
+    }
+
+    .header__navbar_logo img{
+        padding-top: 15px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .header__navbar_logo a h2{
+        padding-top: 15px;
+        padding-right: 25px;
+        font-size: 1.5rem;
+        justify-content: start;
+    }
+
+    .header__navbar_right{
+        display: none;
+    }
+    
+    .home__fondo{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: none;
+    }
+
+    .home__fondo__texto{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    .home__fondo__texto h1{
+        font-size: 2.3rem;
+    }
+
+    .home__fondo__image{
+        grid-row: 2 / 3;
+        grid-column: 1 / 1;
+        width: 250px;
+        height: 250px;
+    }
+
+    .aboutme{
+        display: grid;
+        grid-template-rows: repeat(3, 280px );
+        grid-template-columns: none;
+        padding-bottom: 150px;
+    }
+
+    .aboutme__titulo{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        text-align: center;
+    }
+
+    .aboutme__titulo img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .aboutme_texto{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+
+    .aboutme_texto p{
+        font-size: 1.5rem;
+    }
+
+    .aboutme__tecnologias{
+        padding-top: 45px;
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+
+    .aboutme__tecnologias__image{
+        width: 40px;
+        height: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .portfolio__titulo{
+        text-align: center;
+    }
+
+    .portfolio__post{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: none;
+
+    }
+
+    .portfolio__post__portfolio{
+        width: 80vw;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: none;
+    }
+
+    .portfolio__post__portfolio div img{
+        width: 180px;
+        height: 180px;
+    }
+
+    .portfolio__post__portfolio_image{
+        padding-top: 20px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .portfolio__post__portfolio_title{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .portfolio__post__portfolio_title div{
+        margin: 0;
+        height: 20px;
+    }
+
+    .portfolio__post__portfolio_title p{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .portfolio__post__portfolio_title a i{
+        font-size: 1.5rem;
+    }
+
+    .portfolio__post__batatabit{
+        width: 80vw;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: none;
+    }
+
+    .portfolio__post__batatabit div img{
+        width: 180px;
+        height: 180px;
+    }
+
+    .portfolio__post__batatabit_image{
+        padding-top: 20px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .portfolio__post__batatabit_title{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .portfolio__post__batatabit_title div{
+        margin: 0;
+        height: 20px;
+    }
+
+    .portfolio__post__batatabit_title p{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .portfolio__post__batatabit_title a i{
+        font-size: 1.5rem;
+    }
+
+    .contact__titulo{
+        text-align: center;
+    }
+
+    .contact__icons{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 300px;
+    }
+
+    .contact__icons div a i{
+        font-size: 5.5rem;
+    }
+
+    .footer .footer__text p{
+        font-size: 1.3rem;
+    }
+}
