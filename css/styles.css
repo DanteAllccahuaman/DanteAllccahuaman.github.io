@@ -4,22 +4,27 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Mono', monospace;
+}
+
+html{
     font-size: 62.5%;
 }
 
 .home{
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     background-image: url('../assets/img/wallpaperflare.com_wallpaper.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+
 .header__navbar{
     /* background-color: red; */
     height: 15vh;
-    width: 100vw;
+    width: 80vw;
     display: flex;
+    margin: 0 auto;
 }
 
 .header__navbar_logo{
@@ -46,11 +51,13 @@
 
 .header__navbar_right{
     width: 60vw;
-    margin: 25px 50px;
+    margin: 25px 0;
+    padding: 0 50px;
     font-size: 2.8rem;
     display: grid;
     grid-template-columns: repeat(4, auto);
     place-items: center;
+    gap: 20px;
 }
 
 .header__navbar_right a{
@@ -60,14 +67,14 @@
 }
 
 .header__navbar_right a:hover{
-    color: #fddf7d;
+    /* color: #fddf7d; */
     border-bottom: 5px solid black;
 }
 
 .home__fondo{
     height: 75vh;
-    width: 100vw;
-    padding: 25px 50px;
+    width: 80vw;
+    margin: 0px auto;
     display: grid;
     grid-template-columns: repeat(3, 350px);
     grid-template-rows: repeat(3, 180px);
@@ -108,3 +115,238 @@
     align-content: center;
 }
 
+.aboutme{
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, 180px);
+}
+
+.aboutme__titulo{
+    grid-column: 1 / 2;
+    grid-row:  1 / 3;
+}
+
+.aboutme .aboutme__titulo p{
+    margin-top: 50px;
+    font-size: 3.5rem;
+    color: #006699;
+}
+
+.aboutme__titulo img{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 350px;
+    height: 450px;
+}
+
+.aboutme_texto{
+    grid-column: 2 / 5;
+    grid-row:  2 / 4;
+    justify-items: center;
+    align-items: center;
+}
+
+.aboutme_texto p{
+    margin: 10px 25px;
+   font-size: 2.5rem; 
+}
+
+.aboutme__tecnologias{
+    margin: 20px 35px;
+    grid-column: 2 / 5;
+    grid-row:  4 / 5;
+}
+
+.aboutme__tecnologias__text p{
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.aboutme__tecnologias__image img{
+    margin: 10px 10px;
+    height: 80px;
+    width: 80px;
+}
+
+.portfolio{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.portfolio__titulo{
+    width: 350;
+    height: 500;
+    margin: 50px 0;
+    font-size: 3.5rem;
+    color: #006699;
+}
+
+.portfolio__post{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.portfolio__post__portfolio{
+    width: 100%;
+    height: 350px;
+    background-color: rgba(55, 172, 182, 0.587);
+    border-radius: 40px;
+    grid-column: 1 /3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+}
+
+.portfolio__post__portfolio_image{
+    grid-column: 1 / 2;
+    text-align: center;
+    margin: auto 0;
+}
+
+.portfolio__post__portfolio div img{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 5px 10px 10px black;
+}
+
+.portfolio__post__portfolio_title{
+    grid-column: 2 / 3;
+    font-size: 2.5rem;
+}
+
+.portfolio__post__portfolio_title p{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.portfolio__post__portfolio_title a{
+    margin: 10px 20px;
+}
+
+.portfolio__post__portfolio_title a i{
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 3.5rem;
+    text-align: center;
+    margin: auto 0;
+}
+
+.portfolio__post__portfolio_title div{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.portfolio__post__batatabit{
+    width: 100%;
+    height: 350px;
+    background-color: rgba(55, 172, 182, 0.587);
+    border-radius: 40px;
+    grid-column: 1 /3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.portfolio__post__batatabit_image{
+    grid-column: 1 / 2;
+    text-align: center;
+    margin: auto 0;
+}
+
+.portfolio__post__batatabit div img{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 5px 10px 10px black;
+      
+}
+
+.portfolio__post__batatabit_title{
+    grid-column: 2 / 3;
+    font-size: 2.5rem;
+}
+
+.portfolio__post__batatabit_title p{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.portfolio__post__batatabit_title a{
+    margin: 10px 20px;
+}
+
+.portfolio__post__batatabit_title a i{
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 3.5rem;
+    text-align: center;
+    margin: auto 0;
+}
+
+.portfolio__post__batatabit_title div{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.contact__titulo{
+    width: 350;
+    height: 500;
+    margin: 50px 0;
+    font-size: 3.5rem;
+    color: #006699;
+}
+
+.contact__icons{
+    width: 80vw;
+    height: 550px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.contact__icons div{
+    margin: auto;
+}
+
+.contact__icons div a i{
+    font-size: 8.5rem;
+    color: black;
+    background-color: white;
+}
+
+footer{
+    height: 80px;
+    background-color: black;
+}
+
+footer div{
+    width: 350px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer div p{
+    color: white;
+    font-size: 2.5rem;
+    align-items: center;
+}
